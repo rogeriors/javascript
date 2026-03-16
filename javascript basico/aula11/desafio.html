@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Seu País</h1>
+    Digite o país em que você mora: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function verificar() {
+            const seuPais = document.getElementById("txtpais")
+            let res = document.getElementById("res")
+            res.innerHTML = `Vivendo em ${seuPais.value}<br>`
+
+            if (seuPais.value.toUpperCase() == 'BRASIL') {
+                res.innerHTML += 'Você é Brasileiro'
+            } else {
+                res.innerHTML += 'você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
