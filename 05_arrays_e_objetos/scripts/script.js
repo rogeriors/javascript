@@ -25,3 +25,23 @@ const myName = 'Rogerio'
 console.log(myName.length) // tamanho da variavel (quantia de caracteres)
 
 // 4 - metodos
+
+function adicionarNome() {
+    let inputElements = document.getElementsByName('inputNome');
+    
+    if (inputElements.length === 0) return;
+    let name = inputElements[0].value.trim();
+
+
+    let tUl = document.querySelector('#lista');
+
+    if (!name) {
+        alert('Digite um nome válido');
+        return;
+    }
+
+    let li = document.createElement('li');
+    li.innerText = name;
+    tUl.appendChild(li);
+    inputElements[0].value = '';
+}
