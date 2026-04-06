@@ -1,4 +1,4 @@
-// 1 - Arrays
+/*// 1 - Arrays
 const lista = [1, 2, 3, 4, 5] 
 console.log(lista)
 console.log(typeof lista)
@@ -45,3 +45,35 @@ function adicionarNome() {
     tUl.appendChild(li);
     inputElements[0].value = '';
 }
+*/
+
+const nome = {
+    completeName: 'Rogerio Rodrigues dos Santos',
+    idade: 36,
+    estado: 'Paraná',
+    showMessage: function(){
+        alert('Olá')
+    }
+}
+
+console.log(nome)
+
+
+const arr = ['Rogerio', 'Rafaela', 'Miguel', 'Felipe']
+//              0           1         2         3
+
+ const matriz = [
+    ['Honda','toyota','Hyundai'],
+    ['Rogerio', 'Rafaela'],
+    ['Programador', 'Engenheiro']
+]
+
+// Operador Ternario
+
+console.log(matriz)
+
+const n1 = 0 // False
+const n2 = 2 // True
+
+n1 ? alert('Retornou True') : alert('Retornou False')
+//             True                   False     
