@@ -37,3 +37,6 @@ console.log(arrayNum.sort()) // ordena de forma numerica os itens do array de or
 console.log(array.reverse()) // inverte a ordem dos itens do array do ultimo para o primeiro
 console.log(array.indexOf('gol')) // retorna a posição do item a procurar dentro do Array
 console.log(array.lastIndexOf('gol')) // retorna a ultima posição do item dentro do Array mensionado entre () dentro 
+
+
+
