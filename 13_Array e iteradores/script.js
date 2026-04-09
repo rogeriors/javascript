@@ -33,11 +33,11 @@ const estFindIndex = estoque.findIndex((valor, index, array) => { // retorna o p
 
 console.log(estFindIndex)
 
-const estSome = estoque.some((valor, index, array) => valor) // retorna um true ou false
+const estSome = estoque.some((valor, index, array) => valor) // retorna um true ou false (OU)
 
 console.log(estSome)
 
-const estEvery = estoque.every((valor, index, array) => valor) // retorna true somente se todos os itens forem validos
+const estEvery = estoque.every((valor, index, array) => valor) // retorna true somente se todos os itens forem validos (E)
 
 console.log(estEvery)
 
